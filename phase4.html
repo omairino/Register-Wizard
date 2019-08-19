@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+        
+    </head>
+    <body>
+        <span id = "details"></span>
+        <br>
+        <img href ="" id = "imageid">aaaa</img>
+
+        <script>
+            var image = localStorage.getItem('image')
+            var hobbies = localStorage.getItem('hobbies')
+            var city = localStorage.getItem('city')
+            var number = localStorage.getItem('number')
+            var street = localStorage.getItem('street')
+            var name = localStorage.getItem('name')
+            var email = localStorage.getItem('email')
+            var date = localStorage.getItem('date')
+
+            document.getElementById("details").innerHTML = "Name :" + name 
+            + "<br> Email: " + email +"<br> Birthdate : " + date +  "<br>City:" + city
+            +  "<br>Street:" + street 
+            +  "<br>hobbies:" + hobbies ;
+            var a = document.getElementById('imageid'); //or grab it by tagname etc
+            a.innerHTML = "<img href = "+image "><img>"=image
+
+    </script>
+
+    </body>
+</html>
